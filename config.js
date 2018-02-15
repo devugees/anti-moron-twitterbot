@@ -7,5 +7,3 @@ module.exports = {
     access_token_secret: 'KYaQesPovfA3Kp4ju839zVUpLdZ7dsTOh9FpZKaIiTiZp'
 
 }
-
-const Twitter = new twit(config)
