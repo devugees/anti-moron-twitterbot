@@ -1,18 +1,18 @@
 {
     "hashtags": [
       {
-        "tag": "#kittens",
-        "category": "hate speech",
+        "tag": "#noafd",
+        "category": "campaign",
         "year": "2018"
       },
       {
-        "tag": "#puppies",
-        "category": "provocation",
+        "tag": "#antiracism",
+        "category": "ideology",
         "year": "2018"
       },
       {
-        "tag": "#birds",
-        "category": "racism",
+        "tag": "#blackhistorymonth",
+        "category": "culture/education",
         "year": "2018"
       }
     ]

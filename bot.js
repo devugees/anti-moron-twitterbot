@@ -1,3 +1,6 @@
+const express = require('express')
+const bodyParser = require('body-parser')
+const app = express()
 const twit = require('twit')
 const config = require('./config.js')
 const fs = require('fs')
@@ -6,30 +9,33 @@ const fs = require('fs')
 
 const Twitter = new twit(config)
 
+app.use(bodyParser())
 
 // reading from the data
 
 const hashtags = fs.readFile('./hashtags.json', "utf8", (err, data) => {
     if (err) {
         console.err(err)
+    } else {
+        retweet(data)
     }
-    const theData = JSON.parse(data)
-    const theHashTag = theData.hashtags[0].tag
 })
 
 // entering the data
 
-const retweet = function() {
+ retweet = function(data) {
+    const theData = JSON.parse(data)
+    const theHashTag = theData.hashtags[0].tag
     const params = {
         q: theHashTag,
         result_type: 'recent',
         lang: 'en'
     }
 
-
 // retweet function (inside previous function)
 
     Twitter.get('search/tweets', params, function(err, data) {
+
         // if there no errors
         if (!err) {
             // grab ID of tweet to retweet
@@ -54,6 +60,15 @@ const retweet = function() {
     })
 }
 
-// set interval and execute
 
-setInterval(retweet, 3000000)
+// connect to server
+
+app.listen(3000, function() {
+    console.log('app listening on post 3000')
+})
+
+// execute
+
+app.get('/', function ( req, res ) {
+    setInterval(retweet, 3000000000000)
+})
