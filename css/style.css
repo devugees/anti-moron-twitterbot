@@ -1,0 +1,117 @@
+@import url('demo.css');
+@import url('font-awesome.css');
+
+/* GLOBALS */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-3 {
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    font-weight: 400;
+    /* Size and position */
+    width: 300px;
+    position: relative;
+    margin: 60px auto 30px;
+    padding: 10px;
+    overflow: hidden;
+
+    /* Styles */
+    background: url(https://itspixelperfectblog.files.wordpress.com/2013/07/twitter-logo.jpeg); 
+    background-repeat: no-repeat;
+    border-radius: 0.4em;
+    border: 1px solid #191919;
+    box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.08),
+    0 16px 10px -8px rgba(0, 0, 0, 0.6);
+    width: 50%;
+    height: 48vh;
+}
+.form-3 input[type=text],
+.form-3 input[type=password] {
+    /* Size and position */
+    width: auto;
+    padding: 8px 5px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+
+    /* Styles */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 3px;
+
+    /* Font styles */
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+}
+
+.form-3 input[type=text]:focus, 
+.form-3 input[type=password]:focus {
+    box-shadow: inset 0 0 2px #000;
+    border-color: #51cbee;
+    outline: none; /* Remove Chrome outline */
+}
+
+.form-3 input[placeholder="Username"],
+.form-3 input[placeholder="Password"] {
+    color: blue;
+}
+
+.form-3 input[type=submit] {
+    /* Width and position */
+    width: 100%;
+    padding: 8px 5px;
+  
+    /* Styles */
+    border: 1px solid #0273dd; /* Fallback */
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    border-radius: 3px;
+    background: #38a6f0;
+    cursor:pointer;
+  
+    /* Font styles */
+    font-family: 'Ubuntu', 'Lato', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5em;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.8);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* W WW W OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO W W W W W W W W W W W*/
+}
+
+.form-3 input[type=submit]:hover { 
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.form-3 input[type=submit]:active {
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.6);
+    border-color: #000; /* Fallback */
+    border-color: rgba(0,0,0,0.9);
+}
+
+.no-boxshadow .form-3 input[type=submit]:hover {
+    background: #2a92d8;
+}
+
+.no-pointerevents .form-3 p:nth-child(1):before {
+    display: none;
+}
