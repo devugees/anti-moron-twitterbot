@@ -90,7 +90,7 @@
 }
 
 
-body {
+#body {
     background: url(../images/bg-waves4.png); 
     background-repeat: no-repeat;
     margin: 60px auto;
