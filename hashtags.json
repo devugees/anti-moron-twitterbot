@@ -1,0 +1,19 @@
+{
+    "hashtags": [
+      {
+        "tag": "#blah",
+        "category": "hate speech",
+        "year": "2018"
+      },
+      {
+        "tag": "#something",
+        "category": "provocation",
+        "year": "2018"
+      },
+      {
+        "tag": "#athing",
+        "category": "racism",
+        "year": "2018"
+      }
+    ]
+  }
