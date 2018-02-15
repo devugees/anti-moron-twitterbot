@@ -50,10 +50,10 @@ const hashtags = fs.readFile('./hashtags.json', "utf8", (err, data) => {
                 }, function(err, response) {
                     // if there was an error while tweeting
                     if (err) {
-                        console.log('Error retweeting, check for duplicates')
+                        console.log(`no new tweets with ${params.q} in the last minute`)
                     }
-                    if (response) {
-                        console.log('Retweet successful')
+                    else {
+                        console.log(`tweet with ${params.q} successful`)
                     }
                 });
             }
@@ -75,8 +75,9 @@ app.listen(3000, function() {
 // execute
 
 const init = function(data) {
+    retweet(data)
     setInterval(function(){retweet(data) 
-    }, 60000)
+    }, 70000)
 }
 
 app.get('/', function(req, res)  {
