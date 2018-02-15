@@ -90,33 +90,30 @@
 }
 
 
-.form-4 {
+#body {
     background: url(../images/bg-waves4.png); 
     background-repeat: no-repeat;
-    border: 1px solid #191919;
-    border-radius: 0.4em;
-    box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.08),
-    0 16px 10px -8px rgba(0, 0, 0, 0.6);
     margin: 60px auto;
     padding: 10px;
     width: 50%;
-    max-width: 50%
-    max-height50vh;
     height: 50vh;
-    object-fit: cover;
-    padding: 6em;
 }
 
 input[type=text], textarea {
     padding: 12px 20px;
     margin: 8px 0;
-    box-sizing: border-box;
     font-size: 2.4em;
-    max-width: 13em;
-    max-height: 10em;
 }
-
-.input-container {
-    float: right;
-    margin: auto;
+.h1h1{
+    border: 1px solid red;
+}
+#taglist {
+    color: darkblue;
+    font-weight: 700;
+    font-size: 2.5em;
+    word-wrap: break-word;
+    max-width: none;
+    background-color: white;
+    margin-top: 2rem;
+    padding: 2rem;
 }
