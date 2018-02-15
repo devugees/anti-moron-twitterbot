@@ -1,0 +1,23 @@
+{
+  "name": "anti-moron-twitterbot",
+  "version": "1.0.0",
+  "description": "building a twitter bot to combat morons",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devugees/anti-moron-twitterbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devugees/anti-moron-twitterbot/issues"
+  },
+  "homepage": "https://github.com/devugees/anti-moron-twitterbot#readme",
+  "dependencies": {
+    "twit": "^2.2.9",
+    "yarn-install": "^0.5.1"
+  }
+}
