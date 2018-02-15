@@ -21,6 +21,7 @@
     "express": "^4.16.2",
     "fs": "^0.0.1-security",
     "nodemon": "^1.14.12",
+    "path": "^0.12.7",
     "twit": "^2.2.9",
     "yarn-install": "^0.5.1"
   }

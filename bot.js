@@ -4,12 +4,14 @@ const app = express()
 const twit = require('twit')
 const config = require('./config.js')
 const fs = require('fs')
+const path = require('path')
 
 // initializing the whole shabang
 
 const Twitter = new twit(config)
 
 app.use(bodyParser())
+app.use(express.static('public'))
 
 // reading from the data
 
@@ -80,5 +82,5 @@ const init = function(data) {
 }
 
 app.get('/', function(req, res)  {
-    console.log('blah')
+    res.sendFile(path.join(__dirname, 'index.html'))
 })
