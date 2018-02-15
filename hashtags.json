@@ -1,17 +1,17 @@
 {
     "hashtags": [
       {
-        "tag": "#blah",
+        "tag": "#kittens",
         "category": "hate speech",
         "year": "2018"
       },
       {
-        "tag": "#something",
+        "tag": "#puppies",
         "category": "provocation",
         "year": "2018"
       },
       {
-        "tag": "#athing",
+        "tag": "#birds",
         "category": "racism",
         "year": "2018"
       }

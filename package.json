@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/devugees/anti-moron-twitterbot#readme",
   "dependencies": {
+    "fs": "^0.0.1-security",
     "twit": "^2.2.9",
     "yarn-install": "^0.5.1"
   }
