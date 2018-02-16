@@ -10,14 +10,16 @@ const path = require('path')
 
 const Twitter = new twit(config)
 
-app.use(bodyParser())
 app.use(express.static('public'))
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 // reading from the data
 
-const hashtags = fs.readFile('./hashtags.json', "utf8", (err, data) => {
+const hashtags = fs.readFile(path.join(__dirname, '/hashtags.json'), "utf8", (err, data) => {
     if (err) {
-        console.err(err)
+        console.log(err)
     } else {
         init(data)
     }
@@ -70,8 +72,8 @@ const hashtags = fs.readFile('./hashtags.json', "utf8", (err, data) => {
 
 // connect to server
 
-app.listen(3000, function() {
-    console.log('app listening on post 3000')
+app.listen(63217, function() {
+    console.log('app listening on post 63217')
 })
 
 // execute
