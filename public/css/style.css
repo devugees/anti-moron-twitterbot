@@ -12,7 +12,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background: #fafafa !important;
+    background: #fafafa;
 }
 	
 html {
@@ -21,11 +21,6 @@ html {
 }
 
 ::selection {
-    background-color: #1abc9c;
-    color: #ffffff;
-}
-
-::-moz-selection {
     background-color: #1abc9c;
     color: #ffffff;
 }
@@ -124,8 +119,6 @@ button {
     font-weight: 600;
     outline: none;
     position: relative;
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -133,8 +126,6 @@ button {
     content: '';
     position: absolute;
     z-index: -1;
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -161,8 +152,6 @@ button {
     font-size: 27px;
     line-height: 38px;
     color: #1abc9c;
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -206,29 +195,24 @@ button {
     border-right: 5px solid #333333;
     border-left: 5px solid #1abc9c;
     border-radius: 50%;
-    -webkit-animation: spinner 700ms infinite linear;
     animation: spinner 700ms infinite linear;
     z-index: 10000;
 }
 
 @-webkit-keyframes spinner {
     0% {
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
 
 @keyframes spinner {
     0% {
-        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
@@ -475,25 +459,13 @@ tr > td:nth-child(2) {
 .form-control {
 	border: 2px solid transparent;
 	height: 50px;
-	border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px;
-	-webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-	   -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-	    -ms-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-		 -o-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-			box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
-	-webkit-transition:all 150ms ease-in-out 0s;
-	   -moz-transition:all 150ms ease-in-out 0s;
-	    -ms-transition:all 150ms ease-in-out 0s;
-	     -o-transition:all 150ms ease-in-out 0s;
-		    transition:all 150ms ease-in-out 0s;
+	border-radius: 2px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+	transition:all 150ms ease-in-out 0s;
 }
 .form-control:focus {
 	border-color: #171717;
-	-webkit-box-shadow: none;
-	   -moz-box-shadow: none;
-	    -ms-box-shadow: none;
-		 -o-box-shadow: none;
-			box-shadow: none;
+	box-shadow: none;
 }
 
 .form-control:focus {
@@ -637,12 +609,8 @@ div.blog-post {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: .9;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -657,9 +625,7 @@ div.blog-post {
     object-fit: cover;
     opacity: .5;
     user-drag: none;
-   -webkit-user-drag: none;
-   -webkit-user-select: none;
-   -moz-user-select: none;
+    user-select: none;
 }
 
 .video-box p {
@@ -755,8 +721,6 @@ blockquote {
     width: 263px;
     padding: 25px;
     box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
-   -webkit-box-shadow: -2px -1px 88px 0px rgba(0,0,0,0.17);
-    
 }
 
 .endpage-box h4 {
@@ -915,11 +879,6 @@ blockquote {
 }
 
 .subscribe-form .text-input::-webkit-input-placeholder {
-	color: #ffffff;
-	opacity: 1;
-}
-
-.subscribe-form .text-input:-moz-placeholder {
 	color: #ffffff;
 	opacity: 1;
 }
@@ -1772,7 +1731,7 @@ img {
 }
 
 /* Start *** *********************************************** */
-* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+* {box-sizing: border-box;}
 
 .ripples {
   position: relative;

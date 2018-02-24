@@ -10,7 +10,7 @@ const path = require('path')
 
 const Twitter = new twit(config)
 
-app.use(express.static('public'))
+//app.use(express.static('public'))
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -84,6 +84,13 @@ const init = function(data) {
     }, 70000)
 }
 
+//app.get('/', function(req, res)  {
+//    res.sendFile(path.join(__dirname, 'index.html'))
+//})
+
+
+app.use('/public', express.static(path.join(__dirname, 'public')));
+
 app.get('/', function(req, res)  {
-    res.sendFile(path.join(__dirname, 'index.html'))
+   res.sendFile('index.html', { root: 'public' })
 })
